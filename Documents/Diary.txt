@@ -12,3 +12,7 @@ My current goal is to create the most basic verision of our game and build from 
 an idea of what we can and cannot do.
 
 I am going at the timmer next
+
+UPDATE
+
+I have the day and night cycle implemented I must just add the moon and stars for the night portion of the game
