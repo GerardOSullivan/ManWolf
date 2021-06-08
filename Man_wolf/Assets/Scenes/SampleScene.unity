@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 705507994}
+  m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -883,7 +883,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.9430511, b: 0.7877358, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.63
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -939,13 +939,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.25039542, y: 0.29505086, z: -0.23892802, w: 0.89059556}
+  m_LocalRotation: {x: 0.25084627, y: 0.2950866, z: -0.23901752, w: 0.8904329}
   m_LocalPosition: {x: 0, y: 18.75, z: -11.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 35.944, y: 30.089, z: -20.069}
+  m_LocalEulerAnglesHint: {x: 36, y: 30.089, z: -20.069}
 --- !u!1 &917511702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,6 +2084,7 @@ GameObject:
   - component: {fileID: 1690622110}
   - component: {fileID: 1690622109}
   - component: {fileID: 1690622113}
+  - component: {fileID: 1690622114}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2178,6 +2179,22 @@ MonoBehaviour:
   deselectionType: 5
   m_DeselectionKey: 27
   m_DeselectionDistance: 20
+--- !u!114 &1690622114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690622108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259643da3688a3949af5dac8c2112339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 705507994}
+  minutesInTheFullDay: 20
+  intensityMultiplyer: 0.9
+  currentTimeOfDay: 0.502
 --- !u!114 &1724802880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5563,7 +5580,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 192.5, y: 0}
-  m_SizeDelta: {x: 235, y: 0}
+  m_SizeDelta: {x: 235.00002, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &2223489800912947660
 CanvasGroup:
