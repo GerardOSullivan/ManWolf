@@ -1,0 +1,14 @@
+08/06/2021 - Gerard
+
+I put in the terrain. Its nice its basic but its a world we can walk around in.
+I am not happy about the third person camera and the inventory system needs improvement on picking up items and droping items
+(currently you can drop items by dragging an item to the bottom of the inventory menu only the sides wont work)
+Assets are an issue. we need to get assets that will be used in the final project so a character (preferably customiseable)
+the wolf form, buildings, food, animals, NPCs (could be randomised using some sort of character creator?) and terrain textures
+(the terrain textures arent too bad but could be better). I made the swap camera button a public variable so now its currently
+set to 'Q' but we can change this to whatever if we want very easily (Im very happy with that script)
+
+My current goal is to create the most basic verision of our game and build from that so things like the map are NOT going to stay but gives us
+an idea of what we can and cannot do.
+
+I am going at the timmer next

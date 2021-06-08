@@ -8,6 +8,8 @@ public class SwapCameras : MonoBehaviour
     public GameObject firstPersonCamera;
     public GameObject thirdPersonCamera;
     public GameObject thirdPersonModel;
+    public KeyCode swapCameraKey = KeyCode.F;
+
     private void Start()
     {
         thirdPersonCamera.SetActive(false);
@@ -18,7 +20,7 @@ public class SwapCameras : MonoBehaviour
     void Update()
     {
         //firstperson
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(swapCameraKey))
         {
             if(!isInFirstPerson)
             {
