@@ -7,7 +7,7 @@ public class PlayerFootSteps : MonoBehaviour
     private AudioSource footstep_Sound;
 
     [SerializeField]
-    private AudioClip[] footstep_Clip;
+    private AudioClip[] footstepClip;
 
     private CharacterController character_Controller;
 
@@ -54,15 +54,15 @@ public class PlayerFootSteps : MonoBehaviour
 
             if (accumulated_Distance > step_distance)
             {
-                //This was causing an error only because there was no audio attached. Uncomment when audio attached
-               // footstep_Sound.volume = Random.Range(volume_Min, volume_Max);
-               // footstep_Sound.clip = footstep_Clip[Random.Range(0, footstep_Clip.Length)];
-               // footstep_Sound.Play();
+                //This was causing an error only because there was no audio attached. comment out if you dont need it
+                //this can be fine tuned to match terrain .... im not doing that now
+               footstep_Sound.volume = Random.Range(volume_Min, volume_Max);
+               footstep_Sound.clip = footstepClip[Random.Range(0, footstepClip.Length)];
+               footstep_Sound.Play();
 
                 accumulated_Distance = 0f;
             }
         }
-
         else
         {
             accumulated_Distance = 0f;

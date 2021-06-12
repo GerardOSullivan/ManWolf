@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class SwapCameras : MonoBehaviour
 {
-    private bool isInFirstPerson = true;
+    public static bool isInFirstPerson = true;
     public GameObject firstPersonCamera;
     public GameObject thirdPersonCamera;
-    public GameObject thirdPersonModel;
-    public KeyCode swapCameraKey = KeyCode.F;
+    public KeyCode swapCameraKey = KeyCode.Q;
 
     private void Start()
     {
         thirdPersonCamera.SetActive(false);
-        thirdPersonModel.SetActive(false);
         firstPersonCamera.SetActive(true);
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -27,17 +26,14 @@ public class SwapCameras : MonoBehaviour
                 isInFirstPerson = true;
                 thirdPersonCamera.SetActive(false);
                 firstPersonCamera.SetActive(true);
-                thirdPersonModel.SetActive(false);
-
             }       
              //Third Person
              else
              {
                 isInFirstPerson = false;
                 firstPersonCamera.SetActive(false);
-                thirdPersonModel.SetActive(true);
                 thirdPersonCamera.SetActive(true);
-            }
+             }
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DayNightScript : MonoBehaviour
 {
     [SerializeField]
-    private Light sun;
+    public Light sun;
 
     [SerializeField]
     private float minutesInTheFullDay = 2f;

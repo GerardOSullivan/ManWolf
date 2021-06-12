@@ -16,3 +16,20 @@ I am going at the timmer next
 UPDATE
 
 I have the day and night cycle implemented I must just add the moon and stars for the night portion of the game
+
+12/06/2021 - Gerard
+
+I spent THE WHOLE DAY working on the third person camera. Not going to lie it broke my heart :D . but its getting somewhere now I am using
+a component called cinemachine which creates a neat 3rd person camera. So I am trying to make it gel with my first person camera. Its close now
+I feel that If i can figure out the rotation of the cameras when I swap cameras then I will be very very happy with it :D . other than that
+I installed 3 survival bars 
+
+Food
+Water
+and health
+
+This is just to get into the survival element of the game. The food and water go down over time as well but i havent implemented anything that
+will put them up or put the health down. Also if they reach zero nothing happens (so dont wait for that :P) 
+
+I finally added in the audio sound also. This is just simple dirt sounds and doesnt match to the terrain so if i go on grass it will still 
+sound like im walking on dirt. I just installed that .... for the craic.
