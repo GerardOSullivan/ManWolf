@@ -4,26 +4,22 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    [SerializeField]
-    private Transform playerRoot, lookRoot;
+    public Transform playerRoot;
+    public Transform lookRoot;
 
     [SerializeField]
-    private bool invert;
+    private bool invert=false;
 
-    [SerializeField]
-    private bool can_Unlock = true;
+    //private bool can_Unlock = true;
 
-    [SerializeField]
     private float sensitivity = 5f;
 
-    [SerializeField]
-    private int smooth_Steps = 10;
+    //private int smooth_Steps = 10;
+
+    //private float smooth_Weight = 0.4f;
 
     [SerializeField]
-    private float smooth_Weight = 0.4f;
-
-    [SerializeField]
-    private float roll_Angle = 10f;
+    private float roll_Angle = 0f;
 
     [SerializeField]
     private float roll_Speed = 3f;
@@ -60,7 +56,7 @@ public class MouseLook : MonoBehaviour
 
     // This Method locks and unlocks the cursor when escaped is pressed this allows the user to select menus in the escape option
     // This Method could also be used for an inventory system like tab by just changing the KeyCode.Escape to .Tab
-    void LockAndUnlockCursor()
+    public static void LockAndUnlockCursor()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {

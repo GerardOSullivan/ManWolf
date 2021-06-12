@@ -5,8 +5,8 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
 
-    [SerializeField]
-    private WeaponHandler[] weapons;
+    //[SerializeField]
+    //private WeaponHandler[] weapons;
 
     private int current_Weapon_Index;
 
@@ -14,7 +14,7 @@ public class WeaponManager : MonoBehaviour
     void Start()
     {
         current_Weapon_Index = 0;
-        weapons[current_Weapon_Index].gameObject.SetActive(true);
+        //weapons[current_Weapon_Index].gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -48,15 +48,15 @@ public class WeaponManager : MonoBehaviour
 
     void TurnOnSelectWeapon(int weaponIndex)
     {
-        weapons[current_Weapon_Index].gameObject.SetActive(false);
+        //weapons[current_Weapon_Index].gameObject.SetActive(false);
 
-        weapons[weaponIndex].gameObject.SetActive(true);
+        //weapons[weaponIndex].gameObject.SetActive(true);
 
         current_Weapon_Index = weaponIndex;
     }
 
-    public WeaponHandler GetCurrentSelectedWeapon()
-    {
-        return weapons[current_Weapon_Index];
-    }
+    //public WeaponHandler GetCurrentSelectedWeapon()
+  //  {
+  //      return weapons[current_Weapon_Index];
+  //  }
 }

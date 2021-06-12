@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AnimationController : MonoBehaviour
 {
-    private CharacterController character;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +15,7 @@ public class AnimationController : MonoBehaviour
     void Update()
     {
         //animation for running
-        if(PlayerSprintAndCrouch.is_running)
+        if(PlayerSprintAndCrouch.isRunning)
         {
             animator.SetBool("IsRunning",true);
         }
@@ -46,7 +45,7 @@ public class AnimationController : MonoBehaviour
         }
 
         //animation for crouching
-        if (PlayerSprintAndCrouch.is_Crouching)
+        if (PlayerSprintAndCrouch.isCrouching)
         {
             animator.SetBool("IsCrouching", true);
         }
