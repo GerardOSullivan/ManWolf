@@ -7,11 +7,11 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController characterController;
     public Transform mainCamera;
 
-    private float turnSmoothTime = 0.1f;
+    private float turnSmoothTime = 0.05f;
     private float turnSmoothVelocity;
 
     private Vector3 moveDirection;
-    public float speed = 5f;
+    public float speed = 4f;
     public static bool isJumping = false;
     public static bool isWalking = false;
     private float gravity = 20f;
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     void MoveThePlayer()
     {
-        moveDirection = new Vector3(Input.GetAxis(Axis.HORIZONTAL), 0f, Input.GetAxis(Axis.VERTICAL)).normalized;
+        moveDirection = new Vector3(Input.GetAxisRaw(Axis.HORIZONTAL), 0f, Input.GetAxisRaw(Axis.VERTICAL)).normalized;
 
           //horizontal is A and D keys. A will have a negative value and D will be positve e.g -0.5 is an A press moving left
           //Vertical is W and S keys. 
