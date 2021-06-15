@@ -144,19 +144,25 @@ namespace DevionGames
 
         protected void LoadCachedAnimatorStates()
         {
-            if (PlayerInfo == null) return;
+            // all this code was causing me errors for crafting...... will come back to this if needed
 
-            Animator animator = PlayerInfo.animator;
-            if (animator != null)
-            {
-                for (int j = 0; j < this.m_LayerStateMap.Length; j++)
-                {
-                    if (animator.GetCurrentAnimatorStateInfo(j).shortNameHash != this.m_LayerStateMap[j].shortNameHash && !animator.IsInTransition(j))
-                    {
-                        animator.CrossFadeInFixedTime(this.m_LayerStateMap[j].shortNameHash, 0.15f);
-                    }
-                }
-            }
+
+
+
+
+            //if (PlayerInfo == null) return;
+
+            //Animator animator = PlayerInfo.animator;
+            //if (animator != null)
+            //{
+              //  for (int j = 0; j < this.m_LayerStateMap.Length; j++)
+                //{
+                  //  if (animator.GetCurrentAnimatorStateInfo(j).shortNameHash != this.m_LayerStateMap[j].shortNameHash && !animator.IsInTransition(j))
+                    //{
+                      //  animator.CrossFadeInFixedTime(this.m_LayerStateMap[j].shortNameHash, 0.15f);
+                    //}
+                //}
+            //}
         }
 
     }

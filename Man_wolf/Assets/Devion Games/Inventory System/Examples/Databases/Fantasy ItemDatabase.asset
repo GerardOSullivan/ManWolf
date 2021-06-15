@@ -679,7 +679,7 @@ MonoBehaviour:
   m_SellPrice: 2
   m_SellCurrency: {fileID: -2811142919616601772}
   m_Stack: 1
-  m_MaxStack: 3
+  m_MaxStack: 20
   m_IsDroppable: 1
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
@@ -743,18 +743,18 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_IsCraftable: 1
-  m_CraftingDuration: 3
-  m_UseCraftingSkill: 1
+  m_CraftingDuration: 4
+  m_UseCraftingSkill: 0
   m_SkillWindow: Skills
   m_CraftingSkill: {fileID: 4594666206616667452, guid: e1f045c49e197e3439b99da9edbc5ba3, type: 2}
   m_RemoveIngredientsWhenFailed: 1
   m_MinCraftingSkillValue: 0
-  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingAnimatorState: 
   m_CraftingModifier:
     modifiers: []
   ingredients:
   - item: {fileID: -5663772737389988193}
-    amount: 1
+    amount: 3
   - item: {fileID: 8763039942855579107}
     amount: 1
   properties: []
@@ -2750,7 +2750,7 @@ MonoBehaviour:
   m_SellPrice: 3
   m_SellCurrency: {fileID: -2811142919616601772}
   m_Stack: 1
-  m_MaxStack: 10
+  m_MaxStack: 20
   m_IsDroppable: 1
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
@@ -2794,23 +2794,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
-  m_Name: Blacksmithy
+  m_Name: Crafting
   m_EditorClassIdentifier: 
-  m_GroupName: Blacksmithy
+  m_GroupName: Crafting
   m_Items:
-  - {fileID: 960666660569578442}
-  - {fileID: -2060425377994505070}
   - {fileID: -4474190543486091594}
-  - {fileID: 2409076057030828310}
-  - {fileID: -447126039411374142}
-  - {fileID: 1063046599387310152}
-  m_Amounts: 010000000100000001000000010000000100000001000000
+  m_Amounts: 01000000
   m_Modifiers:
-  - modifiers: []
-  - modifiers: []
-  - modifiers: []
-  - modifiers: []
-  - modifiers: []
   - modifiers: []
 --- !u!114 &9220062648813220349
 MonoBehaviour:
