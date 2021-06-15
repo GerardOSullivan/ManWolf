@@ -7,7 +7,7 @@ public class PlayerSprintAndCrouch : MonoBehaviour
     private PlayerMovement playerMovement;
 
     public float sprintSpeed = 10f;
-    public float moveSpeed = 5f;
+    public float moveSpeed = 4f;
     public float crouchSpeed = 2f;
 
     private Transform look_Root;
