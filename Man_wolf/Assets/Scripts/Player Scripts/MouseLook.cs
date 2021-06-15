@@ -56,7 +56,7 @@ public class MouseLook : MonoBehaviour
 
     // This Method locks and unlocks the cursor when escaped is pressed this allows the user to select menus in the escape option
     // This Method could also be used for an inventory system like tab by just changing the KeyCode.Escape to .Tab
-    public static void LockAndUnlockCursor()
+    private void LockAndUnlockCursor()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
