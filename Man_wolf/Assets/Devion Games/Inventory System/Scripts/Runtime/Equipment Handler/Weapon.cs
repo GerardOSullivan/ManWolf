@@ -102,10 +102,10 @@ namespace DevionGames.InventorySystem
 
         protected override void Update()
         {
-            if (this.m_Pause || !this.m_Handler.enabled || UnityTools.IsPointerOverUI() || !this.m_CharacterAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Default") || ItemSlot.dragObject != null) {         
-                this.m_CharacterAnimator.SetBool("Item Use",false);
-                return; 
-            }
+           // if (this.m_Pause || !this.m_Handler.enabled || UnityTools.IsPointerOverUI() || !this.m_CharacterAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Default") || ItemSlot.dragObject != null) {         
+          //      this.m_CharacterAnimator.SetBool("Item Use",false);
+         //       return; 
+          //  }
  
             switch (this.m_ActivationType)
             {
@@ -262,17 +262,17 @@ namespace DevionGames.InventorySystem
                      AnimatorStateInfo stateInfo = this.m_CharacterAnimator.GetCurrentAnimatorStateInfo(j);
                      this.m_DefaultStates[j] = stateInfo;
                  }
-                this.m_CharacterAnimator.SetInteger("Item ID", this.m_ItemID);
-                this.m_CharacterAnimator.CrossFadeInFixedTime(this.m_IdleState, 0.15f);
+                //this.m_CharacterAnimator.SetInteger("Item ID", this.m_ItemID);
+                //this.m_CharacterAnimator.CrossFadeInFixedTime(this.m_IdleState, 0.15f);
                 this.m_InUse = false;
             } else {
 
-                this.m_CharacterAnimator.SetBool("Item Use", false);
-                this.m_CharacterAnimator.SetInteger("Item ID",0);
+                //this.m_CharacterAnimator.SetBool("Item Use", false);
+                //this.m_CharacterAnimator.SetInteger("Item ID",0);
                 for (int j = 0; j < this.m_DefaultStates.Length; j++)
                 {
-                    this.m_CharacterAnimator.CrossFadeInFixedTime(this.m_DefaultStates[j].shortNameHash, 0.15f);
-                    this.m_CharacterAnimator.Update(0f);
+                    //this.m_CharacterAnimator.CrossFadeInFixedTime(this.m_DefaultStates[j].shortNameHash, 0.15f);
+                    //this.m_CharacterAnimator.Update(0f);
                 }
             }
         }

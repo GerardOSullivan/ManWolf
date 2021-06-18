@@ -16687,6 +16687,18 @@ PrefabInstance:
       propertyPath: name
       value: Inventory
       objectReference: {fileID: 0}
+    - target: {fileID: 2740522862135884627, guid: 73000691bb97ca545a8d09fd0c6f5865, type: 3}
+      propertyPath: m_KeyCode
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740522862135884627, guid: 73000691bb97ca545a8d09fd0c6f5865, type: 3}
+      propertyPath: m_CanDragIn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740522862135884627, guid: 73000691bb97ca545a8d09fd0c6f5865, type: 3}
+      propertyPath: m_CanDragOut
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2740522862135884628, guid: 73000691bb97ca545a8d09fd0c6f5865, type: 3}
       propertyPath: m_Alpha
       value: 0
@@ -63562,7 +63574,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1886123451}
   m_HandleRect: {fileID: 1886123450}
   m_Direction: 3
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
