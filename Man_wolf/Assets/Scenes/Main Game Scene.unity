@@ -7396,7 +7396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1055416805
 Transform:
   m_ObjectHideFlags: 0
@@ -12647,7 +12647,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676125735}
-  m_LocalRotation: {x: 0.25170645, y: -0.000000018617945, z: 0.0000000048421573, w: 0.96780366}
+  m_LocalRotation: {x: 0.25170645, y: 0.000000018617945, z: -0.0000000048421573, w: 0.96780366}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13295,6 +13295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstPersonCamera: {fileID: 2022150247}
   thirdPersonCamera: {fileID: 1055416804}
+  mainCamera: {fileID: 963194225}
   swapCameraKey: 113
 --- !u!1 &1745704198
 GameObject:

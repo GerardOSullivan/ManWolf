@@ -7,6 +7,7 @@ public class SwapCameras : MonoBehaviour
     public static bool isInFirstPerson = true;
     public GameObject firstPersonCamera;
     public GameObject thirdPersonCamera;
+    public GameObject mainCamera;
     public KeyCode swapCameraKey = KeyCode.Q;
 
     private void Start()
@@ -33,7 +34,7 @@ public class SwapCameras : MonoBehaviour
                 isInFirstPerson = false;
                 firstPersonCamera.SetActive(false);
                 thirdPersonCamera.SetActive(true);
-             }
+            }
         }
     }
 }
