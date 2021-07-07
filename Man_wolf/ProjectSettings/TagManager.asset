@@ -7,6 +7,8 @@ TagManager:
   - Fire
   - HealthBar
   - ground
+  - tree
+  - MainLand
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - 
   - First Person
   - Ground
-  - 
+  - PostProcessing
   - 
   - 
   - 
