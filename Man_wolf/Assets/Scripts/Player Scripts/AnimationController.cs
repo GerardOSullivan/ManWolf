@@ -15,7 +15,7 @@ public class AnimationController : MonoBehaviour
     void Update()
     {
         //animation for running
-        if(PlayerSprintAndCrouch.isRunning)
+        if(PlayerSprintAndCrouch.isRunning && (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")))
         {
             animator.SetBool("IsRunning",true);
         }
